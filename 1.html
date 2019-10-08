@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Layout</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <style>
+        
+
+        
+
+*{
+    box-sizing:border-box;
+}
+
+
+.cm{
+    border:2px solid black;
+    float: left;
+}
+.row{
+    content: '';
+    display: block;
+    clear: both;
+    text-align: center;
+    background-color: #B9AFAF;
+}
+
+.content{
+    height: 500px;
+    text-align: center;
+}
+
+.left{
+    height: 500px;
+    background-color: #B9AFAF;
+}
+.right{
+ height: 500px;
+ background-color: #B9AFAF;
+
+}
+.header{
+    height: 100px;
+    background-color: #B9AFAF;
+    width: 100%;
+}
+.mp{
+    margin: 0;
+    padding: 0;
+}
+.pre-body{
+    height: 100px; 
+    width: 100%;
+}
+.body{
+    height: 300px;  
+    width: 100%; 
+}
+.post-body{
+    height: 96px;
+    width: 100%;
+   }
+
+.footer{
+    height: 100px;
+    background-color:#B9AFAF;
+}
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 cm header"><p>Header</p> </div>
+        </div>
+        <div class="row">
+                <div class="col-xl-2 col-lg-2 col-md-3 cm left"><p>Left-pane</p></div>
+
+                <div class="col-xl-8 col-lg-8 col-md-6 cm mp">
+                    <div class="pre-body cm"><p>Pre-body</p></div>
+                    <div class="body cm"><p>body(content)</p></div>
+                    <div class="post-body cm"><p>Post-body</p></div>
+
+                 </div>             
+                <div class="col-xl-2 col-lg-2 col-md-3 cm right"><p>Right-pane</p></div>
+
+        </div>
+        <div class="row">
+            
+            <div class="col-xl-12 col-lg-12 col-md-12 cm footer"><p>Footer</p></div>
+         
+        </div>
+    </div>
+
+
+    <script type="js/bootstrap.min.js"></script>
+
+
+
+
+</body>
+</html>
